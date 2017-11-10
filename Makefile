@@ -6,7 +6,7 @@
 #    By: llonger <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/09/15 16:41:58 by llonger           #+#    #+#              #
-#    Updated: 2017/11/09 17:48:32 by llonger          ###   ########.fr        #
+#    Updated: 2017/11/10 10:58:21 by llonger          ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -88,10 +88,10 @@ $(NAME):
 
 clean:
 	@/bin/rm -f $(OBJ)
-	/bin/rm -f $(OBJ)
-	/bin/rm -f */*~
-	/bin/rm -f */#*#
-	/bin/rm -f */a.out
+	@/bin/rm -f $(OBJ)
+	@/bin/rm -f */*~
+	@/bin/rm -f */#*#
+	@/bin/rm -f */a.out
 	@echo "\033[4;31mall unexpected files and .o are removed\033[0m"
 
 fclean: clean
